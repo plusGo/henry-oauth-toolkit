@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.henry</groupId>
+    <artifactId>henry-oauth-toolkit</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>oauth-client</module>
+        <module>oauth-client-starter</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>henry-oauth-toolkit</name>
+    <description>henry-oauth-toolkit</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.3</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>3.0.3</spring-cloud.version>
+        <io.jsonwebtoken.version>0.7.0</io.jsonwebtoken.version>
+        <org.slf4j.version>1.7.21</org.slf4j.version>
+        <org.slf4j.version>1.7.21</org.slf4j.version>
+        <guava.version>30.1.1-jre</guava.version>
+        <commons-lang3>3.9</commons-lang3>
+        <io.minio.version>7.0.1</io.minio.version>
+        <commons-io.version>2.6</commons-io.version>
+        <hutool.version>5.7.2</hutool.version>
+        <mockito.version>3.0.0</mockito.version>
+        <henry-home-oauth-lib>1.0-SNAPSHOT</henry-home-oauth-lib>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-loadbalancer</artifactId>
+                <version>${spring-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.henry</groupId>
+                <artifactId>oauth-client</artifactId>
+                <version>${henry-home-oauth-lib}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.henry</groupId>
+                <artifactId>oauth-client-starter</artifactId>
+                <version>${henry-home-oauth-lib}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${io.jsonwebtoken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
