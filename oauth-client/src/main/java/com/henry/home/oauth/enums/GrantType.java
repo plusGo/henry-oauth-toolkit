@@ -1,4 +1,4 @@
-package com.henry.home.oauth.starter.enums;
+package com.henry.home.oauth.enums;
 
 public enum GrantType {
     AUTHORIZATION_CODE,

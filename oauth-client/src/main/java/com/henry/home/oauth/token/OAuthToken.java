@@ -1,4 +1,4 @@
-package com.henry.home.oauth.starter.token;
+package com.henry.home.oauth.token;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

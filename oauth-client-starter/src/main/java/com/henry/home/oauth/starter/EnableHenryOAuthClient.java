@@ -12,5 +12,5 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE})
 @Documented
 @Import(OAuthConfiguration.class)
-public @interface EnableOAuthClient {
+public @interface EnableHenryOAuthClient {
 }

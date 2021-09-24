@@ -53,11 +53,6 @@
                 <version>${spring-cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-loadbalancer</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.henry</groupId>
                 <artifactId>oauth-client</artifactId>
                 <version>${henry-home-oauth-lib}</version>
@@ -91,11 +86,6 @@
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>${hutool.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,4 +1,4 @@
-package com.henry.home.oauth.starter.configuration;
+package com.henry.home.oauth.configuration;
 
 import lombok.Data;
 

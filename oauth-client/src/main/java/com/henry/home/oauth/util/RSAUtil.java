@@ -1,4 +1,4 @@
-package com.henry.home.oauth.starter.util;
+package com.henry.home.oauth.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

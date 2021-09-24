@@ -1,4 +1,4 @@
-package com.henry.home.oauth.starter.model.model;
+package com.henry.home.oauth.model.model;
 
 import lombok.Builder;
 import lombok.Data;
